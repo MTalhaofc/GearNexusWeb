@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2 align="center"><u>GearNexus</u></h2>
 
 <h4 align="center"> Car AutoParts Store </h4>
@@ -20,3 +21,6 @@
 GearNexus Web is your one-stop shop for all your automotive part needs. With a user-friendly interface and a vast inventory, finding the right auto parts has never been easier. Whether you're a car enthusiast or a professional mechanic, GearNexus Web has everything you need to keep your vehicle running smoothly.
 
 # GearNexusWeb
+=======
+# GearNexusWebApp
+>>>>>>> 012f126 (Initial commit)
