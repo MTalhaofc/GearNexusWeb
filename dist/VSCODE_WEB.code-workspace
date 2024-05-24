@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../VSCODE_WEB"
+		},
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../../../../opt/lampp/htdocs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "GearNexus"
+	}
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="/Project/assets/Favicon/favicon.png" type="image/png">
+
+    <title> Gear Nexus</title>
+</head>
+<body class="bg-slate-900">
+   <!-- Navbar Goes Here -->
+   <header class="bg-white">
+    <nav class=" flex justify-between w-[92%] mx-auto ">
+    <div>
+        <img  class="w-32 p-1" src="/Project/assets/Images/Gear Nexus Logo.svg" alt="Not Available">
+    </div>
+    <div class=" nav_links md:static absolute bg-white  md:min-h-fit min-h-[40vh] left-0 mt-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+    <ul onclick="closemenu(this)" class="flex flex-col md:flex-row bg-white md:items-center md:gap-[4vw] gap-8  " >
+        <li>
+            <a    class="  hover:underline decoration-slate-900 decoration-2" href="index.html#Home" >Home</a>
+    
+        </li>
+        <li>
+            <a  class="  hover:underline  decoration-slate-900 decoration-2"  href="index.html#Products" >Products</a>    </li>
+    
+        <li>
+            <a  class="  hover:underline  decoration-slate-900 decoration-2" href="index.html#Reviews" >Reviews</a>    </li>
+    
+        <li>
+            <a  class="  hover:underline  decoration-slate-900 decoration-2" href="index.html#Contactus" >Contact Us</a>    </li>
+    </ul>
+    </div>
+    <div class="flex items-center gap-6 justify-center">
+    <a href="cart.html"><ion-icon name="cart-outline" class="text-2xl mt-1"></ion-icon></a>
+        <a  href="profile.html" ><ion-icon name="person-circle-outline" class="text-2xl mt-1" ></ion-icon></a>
+        <ion-icon onclick="ontogglemenu(this)" class="text-3xl cursor-pointer md:hidden mb-1" name="menu-outline"></ion-icon>
+    </div>
+    </nav>
+    
+    </header>
+
+    <!-- Navbar Ends here -->
+
+    <!-- Footer/Contact Us starts here  -->
+<section id="Contactus">
+    <footer class="w-full  bg-gray-800 text-white px-4 pt-8 flex flex-col md:flex-row flex-wrap justify-between md:px-12">
+        
+        
+    
+        <div>
+            <img class="w-32 h-auto" src="/Project/assets/Images/Gear Nexus Logo.svg" alt="">
+            <p class="text-sm mt-1">Email us at : talha0750@gmail.com</p>
+            
+        </div>
+        
+        <div>
+            <h2 class="font-bold mt-4">GearNexus</h2>
+            <div class="w-32 h-1 border-b-2 border-red-500 rounded-lg my-2 "></div>
+            <div>
+                <p>About us</p>
+                <p>FAQ'S</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div>
+            <h2 class="font-bold mt-4">Products</h2>
+            <div class="w-32 h-1 border-b-2 border-red-500 rounded-lg my-2 "></div>
+            <div>
+                <p>Steering</p>
+                <p>Rims</p>
+                <p>GearKnob</p>
+            </div>
+        </div> <div>
+            <h2 class="font-bold mt-4">Links</h2>
+            <div class="w-32 h-1 border-b-2 border-red-500 rounded-lg my-2 "></div>
+            <div>
+                <p>Instagram</p>
+                <p>Youtube</p>
+                <p>Linkedin</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+    <!-- Footer/Contact Us ends here  -->
+    <script>
+
+        function ontogglemenu() {
+            const navlinks = document.querySelector('.nav_links');
+            const menuStateIcon = document.getElementById('menu-icon');
+        
+            function closemenu() {
+                navlinks.style.top = '-100%';
+                menuStateIcon.textContent = '☰';
+            }
+        
+            function openmenu() {
+                navlinks.style.top = '0';
+                menuStateIcon.textContent = '✖';
+            }
+        
+            navlinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function () {
+                    closemenu();
+                });
+            });
+        
+            navlinks.classList.toggle('top-[6vh]');
+            if (navlinks.classList.contains('top-[6vh]')) {
+                openmenu();
+            } else {
+                closemenu();
+            }
+        }
+        
+        
+        
+        </script>
+</body>
+</html>

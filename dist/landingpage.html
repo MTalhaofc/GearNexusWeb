@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="/Projects/assets/Favicon/favicon.png" type="image/png">
+
+    <title> Gear Nexus</title>
+</head>
+<body class="bg-slate-900">
+    <!-- Navbar Goes Here -->
+<header class="bg-white">
+<nav class=" flex justify-between w-[92%] mx-auto ">
+<div>
+    <img  class="w-32 p-1" src="/Projects/GearNexus/assets/Images/Gear Nexus Logo.svg" alt="Not Available">
+</div>
+<div class=" nav_links md:static absolute bg-white  md:min-h-fit min-h-[40vh] left-0 mt-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+<ul onclick="closemenu(this)" class="flex flex-col md:flex-row bg-white md:items-center md:gap-[4vw] gap-8  " >
+    <li>
+        <a    class="  hover:underline decoration-slate-900 decoration-2" href="#Home" >Home</a>
+
+    </li>
+    <li>
+        <a  class="  hover:underline  decoration-slate-900 decoration-2"  href="#Products" >Products</a>    </li>
+
+    <li>
+        <a  class="  hover:underline  decoration-slate-900 decoration-2" href="#Reviews" >Reviews</a>    </li>
+
+    <li>
+        <a  class="  hover:underline  decoration-slate-900 decoration-2" href="#Contactus" >Contact Us</a>    </li>
+</ul>
+</div>
+<div class="flex items-center gap-6 justify-center">
+<a href="cart.html"><ion-icon name="cart-outline" class="text-2xl mt-1"></ion-icon></a>
+    <a  href="profile.html" ><ion-icon name="person-circle-outline" class="text-2xl mt-1" ></ion-icon></a>
+    <ion-icon onclick="ontogglemenu(this)" class="text-3xl cursor-pointer md:hidden mb-1" name="menu-outline"></ion-icon>
+</div>
+</nav>
+
+</header>
+<!-- Navbar Ends here -->
+<!-- Home starts here  -->
+<section id="Home">
+<div class="">
+  
+  <div class="w-full h-[800px] bg-cover hidden   md:flex md:justify-center md:items-center md:flex-col"  style="background-image: url(/Projects/GearNexus/assets/Images/img_car_main.jpeg); "  >
+  <p class="text-white  text-2xl text-center">Rev up your ride with Gear Nexus, your one-stop destination for auto parts.</p>
+<div class="flex justify-center items-center">
+  <a href="#Products"> <button class="text-white text- p-2 border-solid  rounded-md bg-black hover:bg-white hover:text-black"><ion-icon class="" name="pricetag-outline"></ion-icon>  Shop Now</button></a>
+  <a href="#Products"> <button class="text-black text- p-2 border-solid   ms-2 rounded-md bg-white hover:bg-black hover:text-white"><ion-icon class="" name="search-outline"></ion-icon>  Search</button></a>
+</div>
+</div>
+<div class="w-full h-[700px] bg-cover md:hidden    flex justify-center items-center flex-col"  style="background-image: url(/Projects/GearNexus/assets/Images/img_car_main_mobile.jpeg); "  >
+  <p class="text-white  text-center">Rev up your ride with Gear Nexus, your one-stop destination for auto parts.</p>
+  <div class="flex justify-center items-center">
+    <a href="#Products"> <button class="text-white text- p-2 border-solid  rounded-md bg-black hover:bg-white hover:text-black"><ion-icon class="" name="pricetag-outline"></ion-icon>  Shop Now</button></a>
+    <a href="#Products"> <button class="text-black text- p-2 border-solid   ms-2 rounded-md bg-white hover:bg-black hover:text-white"><ion-icon class="" name="search-outline"></ion-icon>  Search</button></a>
+  </div>
+</div>
+
+
+
+
+</div>
+</section>
+<!-- Home Ends here  -->
+
+<!-- Products Section Start here -->
+<section id="Products">
+<div class="h-auto w-100 flex flex-wrap flex-col items-center text-center  p-2">
+<div class="h-auto w-100 flex flex-wrap flex-col items-center text-center  p-2">
+    <p class="text-white font-bold text-xl md:text-2xl text-center">Products</p>
+    <div class="w-36 h-1   border-b-4 rounded-xl"></div>
+
+</div>    
+<div class="w-full flex flex-wrap justify-evenly mt-3 " >
+<div class=" flex flex-col items-center bg-white rounded-xl  m-1 transition-transform duration-300 transform hover:scale-110" > 
+    <img class="h-50 w-40 rounded-t-xl  " src="/Projects/GearNexus/assets/Images/rims.jpg">
+    <p class="text-lg font-bold  text-slate-950">Rims</p>
+    <p class=" font-bold text-gray-500">$450</p>
+</div>
+<div class="w-46 flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+  <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/meter.jpg">
+  <p class="text-lg font-bold  text-slate-900">Car Meter</p>
+  <p class=" font-bold text-gray-500">$700</p>
+</div><div class="w-46  flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+  <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/headlights.jpg">
+  <p class="text-lg font-bold  text-slate-900">Headlights</p>
+  <p class=" font-bold text-gray-500">$1100</p></div>
+  <div class="w-46 flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+    <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/backlights.jpg">
+    <p class="text-lg font-bold  text-slate-900">Backlights</p>
+    <p class=" font-bold text-gray-500">$1250</p>
+</div><div class="w-46 flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+  <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/fuel.jpg">
+  <p class="text-lg font-bold  text-slate-900">Fuel Hood</p>
+  <p class=" font-bold text-gray-500">$100</p>
+</div><div class="w-46 flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+  <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/backspace.jpg">
+  <p class="text-lg font-bold  text-slate-900">Back Spoilor</p>
+  <p class=" font-bold text-gray-500">$300</p>
+</div>
+</div>
+<div class="w-full flex flex-wrap justify-evenly  mt-1" >
+
+<div class="w-46 flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+  <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/steering.jpg">
+  <p class="text-lg font-bold  text-slate-900">Steering</p>
+  <p class=" font-bold text-gray-500">$650</p>
+</div><div class="w-46 flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+  <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/carseat.jpg">
+  <p class="text-lg font-bold  text-slate-900">Bucket Car Seat</p>
+  <p class=" font-bold text-gray-500">$900</p>
+</div><div class="w-46 flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+  <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/engine.jpg">
+  <p class="text-lg font-bold  text-slate-900">V12 Engine</p>
+  <p class=" font-bold text-gray-500">$2800</p>
+</div><div class="w-46 flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+  <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/gearknob.jpg">
+  <p class="text-lg font-bold  text-slate-900">Gear Knob</p>
+  <p class=" font-bold text-gray-500">$70</p>
+</div>
+<div class="w-46 flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+  <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/breal.jpg">
+  <p class="text-lg font-bold  text-slate-900">Break Caliper</p>
+  <p class=" font-bold text-gray-500">$250</p>
+</div><div class="w-46 flex flex-col items-center bg-white rounded-xl m-1 transition-transform duration-300 transform hover:scale-110" > 
+  <img class="h-50 w-40 rounded-t-xl " src="/Projects/GearNexus/assets/Images/sidemirror.jpg">
+  <p class="text-lg font-bold  text-slate-900">Side View Mirror</p>
+  <p class=" font-bold text-gray-500">$150</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Sections Ends here -->
+<!-- Reviews Section Stars here -->
+<section id="Reviews">
+<div class="h-auto w-100 flex flex-wrap flex-col items-center text-center  p-2">
+    <p class="text-white font-bold text-xl md:text-2xl text-center">Reviews</p>
+    <div class="w-36 h-1 border-b-4 rounded-xl"></div>
+
+
+
+</div>    
+<div class="h-auto flex flex-wrap justify-around">
+<div class="w-48 h-32 flex  bg-white   rounded-md mb-12 hover:border-slate-700 hover:border-2 hover:rounded-md p-2 ml-2">
+    <ion-icon class="m-1 rounded-full" name="person-outline"></ion-icon>
+    <div class="flex flex-col m-2 mt-0">
+    <p class="text-black font-bold">Muhammad Talha</p>
+    <p class="text-gray-500 text-sm">Best Auto Products Ever. Bought Car Seat</p> </div>
+</div>
+<div class="w-48 h-32 flex  bg-white   rounded-md mb-12 hover:border-slate-700 hover:border-2 hover:rounded-md p-2 ml-2">
+    <ion-icon class="m-1 rounded-full" name="person"></ion-icon>
+    <div class="flex flex-col m-2 mt-0">
+    <p class="text-black font-bold">Muhammad Subhan</p>
+    <p class="text-gray-500 text-sm">Gear Knob has the best Quality</p> </div>
+</div>
+<div class="w-48 h-32 flex  bg-white   rounded-md mb-12 hover:border-slate-700 hover:border-2 hover:rounded-md p-2 ml-2">
+    <ion-icon class="m-1 rounded-full" name="person-outline"></ion-icon>
+    <div class="flex flex-col m-2 mt-0">
+    <p class="text-black font-bold">Alia Butt</p>
+    <p class="text-gray-500 text-sm">Amazing Paint. Bought Fuel Hood</p> </div>
+</div>
+<div class="w-48 h-32 flex  bg-white   rounded-md mb-12 hover:border-slate-700 hover:border-2 hover:rounded-md p-2 ml-2">
+    <ion-icon class="m-1 rounded-full" name="person-sharp"></ion-icon>
+    <div class="flex flex-col m-2 mt-0">
+    <p class="text-black font-bold">Hassan Butt</p>
+    <p class="text-gray-500 text-sm">Best Auto Products Ever. Bought Spolor</p> </div>
+</div>
+
+</div>
+</section>
+<!-- Reviews Section Ends here  -->
+<!-- Footer/Contact Us starts here  -->
+<section id="Contactus">
+<footer class="w-full  bg-gray-800 text-white px-4 pt-8 flex flex-col md:flex-row flex-wrap justify-between md:px-12">
+    
+    
+
+    <div>
+        <img class="w-32 h-auto" src="/Projects/assets/Images/Gear Nexus Logo.svg" alt="">
+        <p class="text-sm mt-1">Email us at : talha0750@gmail.com</p>
+        
+    </div>
+    
+    <div>
+        <h2 class="font-bold mt-4">GearNexus</h2>
+        <div class="w-32 h-1 border-b-2 border-red-500 rounded-lg my-2 "></div>
+        <div>
+            <p>About us</p>
+            <p>FAQ'S</p>
+            <p>Privacy Policy</p>
+        </div>
+    </div>
+    <div>
+        <h2 class="font-bold mt-4">Products</h2>
+        <div class="w-32 h-1 border-b-2 border-red-500 rounded-lg my-2 "></div>
+        <div>
+            <p>Steering</p>
+            <p>Rims</p>
+            <p>GearKnob</p>
+        </div>
+    </div> <div>
+        <h2 class="font-bold mt-4">Links</h2>
+        <div class="w-32 h-1 border-b-2 border-red-500 rounded-lg my-2 "></div>
+        <div>
+            <p>Instagram</p>
+            <p>Youtube</p>
+            <p>Linkedin</p>
+        </div>
+    </div>
+</footer>
+</section>
+<!-- Footer/Contact Us ends here  -->
+
+
+<!-- Nabvar Script goes here  -->
+<script>
+
+function ontogglemenu() {
+    const navlinks = document.querySelector('.nav_links');
+    const menuStateIcon = document.getElementById('menu-icon');
+
+    function closemenu() {
+        navlinks.style.top = '-100%';
+        menuStateIcon.textContent = '☰';
+    }
+
+    function openmenu() {
+        navlinks.style.top = '0';
+        menuStateIcon.textContent = '✖';
+    }
+
+    navlinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function () {
+            closemenu();
+        });
+    });
+
+    navlinks.classList.toggle('top-[6vh]');
+    if (navlinks.classList.contains('top-[6vh]')) {
+        openmenu();
+    } else {
+        closemenu();
+    }
+}
+
+
+
+</script>
+<!-- Navbar script ends here  -->
+</body>
+</html>
